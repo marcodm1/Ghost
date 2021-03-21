@@ -1,0 +1,13 @@
+{{!< default}}
+<div class="text-center">
+    <h1 class="page-title">{{@site.title}}</h1>
+    <p class="page-description">{{@site.description}}</p>
+</div>
+<div class="container">
+    <ul>
+        {{#foreach posts}}
+            {{> loopPost}}
+        {{/foreach}}
+    </ul>
+    <div class="d-flex justify-content-center mb-5">{{pagination}}</div>
+</div>

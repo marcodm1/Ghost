@@ -1,0 +1,6 @@
+<ul class="navbar-nav mr-auto">
+    {{#foreach navigation}}
+        <li class="nav-item{{#if current}} active{{/if}} {{link_class for=(url) class=(concat "nav-" slug)}}">
+        <a class="nav-link" href="{{url absolute="true"}}">{{label}}</a></li>
+    {{/foreach}}
+</ul>
