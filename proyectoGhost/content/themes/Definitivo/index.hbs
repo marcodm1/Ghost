@@ -1,0 +1,15 @@
+{{!< default}}  <!--Usa la "plantilla" default.hbs-->
+<header>
+  <h1 class="page-title">{{@site.title}}</h1>
+  <h2 class="page-description">{{@site.description}}</h2>
+</header>
+
+<main role="main">
+<ul>
+  {{#foreach posts}} <!--Bucle de posts-->
+    <!--Dentro del scope de post usamos sus variables-->
+    <li><a href={{url}}>{{title}}</a></li>
+  {{/foreach}}
+</ul>
+{{pagination}}
+</main>
